@@ -1,5 +1,5 @@
 [package]
-name = "search-rs"
+name = "inverted-index-example"
 version = "0.1.0"
 edition = "2024"
 

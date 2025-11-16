@@ -304,6 +304,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "inverted-index-example"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "axum",
+ "env_logger",
+ "log",
+ "serde",
+ "serde_json",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
 name = "is_terminal_polyfill"
 version = "1.70.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -524,20 +538,6 @@ name = "scopeguard"
 version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
-
-[[package]]
-name = "search-rs"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "axum",
- "env_logger",
- "log",
- "serde",
- "serde_json",
- "tokio",
- "tracing",
-]
 
 [[package]]
 name = "serde"
