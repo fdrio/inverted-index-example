@@ -34,7 +34,6 @@ pub struct SearchResult {
 
 // Index a document into the inverted index
 async fn index(State(state): State<AppState>, Json(req): Json<IndexRequest>) -> Json<SearchResult> {
-    // Super dumb tokenizer: split on whitespace and use position in the slice as "position"
     let tokens: Vec<(String, usize)> = req
         .text
         .split_whitespace()
