@@ -61,7 +61,6 @@ async fn search(
 ) -> Json<SearchResult> {
     let hits = {
         let idx = state.index.lock().await;
-        // Assuming your rank signature is: fn rank(&self, q: &str) -> Option<Vec<DocID>>
         idx.rank(&req.query).unwrap_or_default()
     };
 
