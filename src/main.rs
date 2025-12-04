@@ -44,7 +44,6 @@ async fn index(State(state): State<AppState>, Json(req): Json<IndexRequest>) -> 
 
     {
         let mut idx = state.index.lock().await;
-        // adjust name if your method is still called `index`
         idx.add_document(req.doc_id, tokens);
     }
 
